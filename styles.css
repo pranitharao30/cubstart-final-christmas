@@ -178,7 +178,6 @@ Experiment with border, border-radius, background-color, or whatever you want!*/
 
 /* Question 6. Make your link pretty! */
 a {
-    background-color: #f0c6d0;
     font-weight: 200;
 }
 
@@ -196,7 +195,6 @@ a::after {
   left: 0;
 }
 a::before {
-  background-color: #54b3d6;
   height: 2px;
   bottom: 0;
   transform-origin: 100% 50%;
@@ -210,7 +208,7 @@ a::after {
   transform-origin: 100% 50%;
   transform: translate3d(200%, 0, 0);
   transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-  color: #54b3d6;
+  color: #c54245;
 }
 
 a:hover::before {
