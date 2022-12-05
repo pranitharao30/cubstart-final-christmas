@@ -1,0 +1,245 @@
+
+body {
+    margin: 50px auto;
+    max-width: 1000px;
+    color: #000000;
+    background-color: #aecea3;
+}
+
+
+img {
+    width: 150px;
+    border: 4px solid #c54245;
+    transition: ease-in-out 0.3s;
+    border: 30px;
+}
+
+h1 {
+    font-size: 35px;
+    transition: ease-in-out 0.5s;
+    text-align: center;
+}
+
+h3 {
+    font-size: 18px
+}
+
+/* Question 1. Add a hover effect for your h1 tag and img tag! You can change the background-color, color, opacity, or anything you want.*/
+
+
+img:hover {
+    transform: scale(1.3);
+}
+
+
+
+
+
+
+/* Question 3. Add different background colors for all the different sections, by selecting them via ids. */
+
+.navbar {
+    background-color: #b11e32;
+    
+}
+
+#title {
+    color:white;
+    font-style: normal;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#experience{
+    background-color: #f3c2b0;
+}
+#education{
+    background-color: #f0c6d0
+}
+#contact{
+    background-color: rgb(150, 207, 175);
+}
+
+.horizontal_bar {
+    color: transparent;
+    background-color: #117519;
+    padding: 4px
+}
+
+.horizontal_bar_not {
+    background-color: #117519;
+  
+    padding: 4px
+}
+/* Experience Section */
+
+/* Question 4a. This is a little tougher! Use CSS Flexbox to display your experiences as shown in the diagram.
+ Hint: If you're stuck with finding values that work, check the homework instructions document for some help!*/
+
+#wrapper1 {
+    gap: 20px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.first-list {
+    /* Tip: Feel free to change anything here (e.g. border, background-color, etc.). 
+    Changing the padding and width might throws thiings off, but experiment with it and see what looks good. */
+   
+    text-align: center;
+    width: 250px;
+    padding: 2px 5px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 30px;
+
+
+    /* Tip: Add the transition attribute to make effects look smoother! 
+    This means the hover effect will slowly kick in for 0.2s. */
+}
+
+
+/* Question 4b. Let's take a break! Add a hover effect to each experience-list-item div. 
+Experiment with border, border-radius, background-color, or whatever you want!*/
+
+.first-list:hover {
+    box-shadow: inset 290px 0 0 0 #c54245;
+    color:rgb(255, 255, 255);
+}
+
+.footer {
+    padding: 2em;
+    margin-top: 3em;
+  }
+
+#nav_right {
+    text-align: right;
+    padding: 0px;
+    font-size: medium;
+    vertical-align: center;
+    
+}
+#wrapper2 {
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer {
+    text-align: center;
+    
+}
+
+.second-list {
+    /* Tip: Feel free to change anything here (e.g. border, background-color, etc.). 
+    Changing the padding and width might throws thiings off, but experiment with it and see what looks good. */
+   
+    text-align: center;
+    width: 250px;
+    padding-top: 1ch;
+    padding-bottom: 2ch;
+    background-color: white;
+    border-radius: 10px;
+    margin: 30px;
+
+    /* Tip: Add the transition attribute to make effects look smoother! 
+    This means the hover effect will slowly kick in for 0.2s. */
+    transition: ease-in-out 0.2s;
+}
+
+.project-list-item {
+    position: relative;
+  }
+  
+  .project-list-item::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      border-radius: 4px;
+      background-color: #18272F;
+      bottom: 0;
+      left: 0;
+      transform-origin: right;
+      transform: scaleX(0);
+      transition: transform .3s ease-in-out;
+    }
+  
+  .project-list-item:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
+
+
+/* Contact Section */
+
+/* Question 6. Make your link pretty! */
+a {
+    background-color: #f0c6d0;
+    font-weight: 200;
+}
+
+a {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+
+a::before,
+a::after {
+ content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+a::before {
+  background-color: #54b3d6;
+  height: 2px;
+  bottom: 0;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+a::after {
+  content: attr(data-replace);
+  height: 100%;
+  top: 0;
+  transform-origin: 100% 50%;
+  transform: translate3d(200%, 0, 0);
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  color: #54b3d6;
+}
+
+a:hover::before {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+a:hover::after {
+  transform: translate3d(0, 0, 0);
+}
+
+a span {
+  display: inline-block;
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+a:hover span {
+  transform: translate3d(-200%, 0, 0);
+}
+
+
+/* Question 7. Let's make this a little more mobile-friendly! Use a media query/breakpoint to make
+project-list-item and experience-list-item divs have a width of 100% for smaller devices.*/
+
+ @media only screen and (max-width: 600px) {
+	.project-list-item {
+        width: 100%;
+    }
+    .experience-list-item
+ {
+    width: 100%;
+}
+ }
