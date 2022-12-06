@@ -24,6 +24,9 @@ h3 {
     font-size: 18px
 }
 
+h2 {
+  padding: 0%;
+}
 /* Question 1. Add a hover effect for your h1 tag and img tag! You can change the background-color, color, opacity, or anything you want.*/
 
 
@@ -68,7 +71,7 @@ img:hover {
 
 .horizontal_bar_not {
     background-color: #117519;
-  
+    color: white;
     padding: 4px
 }
 /* Experience Section */
@@ -228,6 +231,16 @@ a:hover span {
   transform: translate3d(-200%, 0, 0);
 }
 
+.intro{
+  line-height: 180%;
+}
+.padd{
+   gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
 
 /* Question 7. Let's make this a little more mobile-friendly! Use a media query/breakpoint to make
 project-list-item and experience-list-item divs have a width of 100% for smaller devices.*/
