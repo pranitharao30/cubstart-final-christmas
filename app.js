@@ -72,26 +72,42 @@ let findEntries  = async (user) => {
     entryList.innerHTML = items.join('');
 }
 
+let findAllEntries = async () => {
+    const que = query(entryRef);
+    const querySnapshotNew = await getDocs(que);
+
+    querySnapshotNew.forEach((doc) => {
+        console.log(doc.id, " => ", doc.data());
+      });
+
+    const allItems = querySnapshotNew.docs.map(doc => {
+        return `<li>${doc.data().name}: ${doc.data().entry}</li>`
+    });
+    
+
+
+    entryList.innerHTML = allItems.join('');
+
+}
+
 onAuthStateChanged(auth, (user) => {
     if (user) {
 
-        findEntries(user)
+        findAllEntries()
 
         createPost.onclick = async () => {
-            //////// QUESTION 4: Add an entry in the database! (Hint: Check the homework spec) ////////
             let timestamp = Timestamp.now()
 
             const newEntryRef = await addDoc(entryRef, {
                 uid: user.uid,
                 entry: entryText.value,
-                timestamp: timestamp
+                timestamp: timestamp,
+                name: user.displayName
               });
 
             console.log("Document written at", newEntryRef.timestamp);
             entryText.value = ""
             findEntries(user)
-
-            //////// END OF QUESTION 4 ////////
         }
     } 
 });
