@@ -1,57 +1,61 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="stylesCom.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <title>Community Forum</title>
-
-  <!-- The core Firebase JS SDK is always required and must be listed first  -->
-
-
-  <script type="module" src="./app.js" defer></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <!--add a href to link back to home page-->
- <div class="back">
-   <p>back to home</p>
- </div>
-   <div class="header">
-     <h1>community forum</h1>
-     <section id="whenSignedOut">
-      <div id="SignInButton">
-       <button id="signInBtn" class="btn btn-primary">LOG IN</button>
-      </div>
-     </section>
-     <section id="whenSignedIn" hidden="true">
+        <div class="navbar">  
+        <!-- <a href="ADD LOGIN PAGE HERE"> login  -->
+        <p class="horizontal_bar"> n</p>
+        <div id="title">
+        <h1>Santa Tell Me</h1>  
+        
+        <div id="nav_right"> 
+            <p class="horizontal_bar_not">&nbsp</p>
+            </div>
+        </div>
+    </div>
+           <div id="wrapper1">
+           
+            <div class="first-list">
+                <h3><a href="about.html"> About  </a> </h3>
+            </div>
 
-      <div id="userDetails"></div>
+           
 
-      <button id="signOutBtn" class="btn btn-primary">LOG OUT</button>
-    </section>
-   </div>
-   <div id="content">
-      <div class="instructions">
-        <p>post about your favorite christmas traditions or your christmas wishes for this year!</p>
-      </div>
-       <input type="text" style="height: 70px; width: 100vw; border-radius: 15px;" id="entryText"/>
-       <button id="createPost" class="btn btn-success">post</button>
+            <div class="first-list">
+                <h3><a href="contact.html"> Contact  </a>  </h3>
+            </div>
+        </div> 
+      
+        <!-- </section> -->
 
-       <div id="posts">
-           <ul id="entryList">
 
-           </ul>
-       </div>
-   </div>
+            <div id="wrapper2">
+            <div class="second-list">
+                <h3> <a href="recipe.html">Recipes</a> </h3>
+                <img src="assests/recipes.png" />
+            </div>
 
+            <div class="second-list">
+                <h3> <a href="Christmas_music_player/index.html">Music</a> </h3>
+                <img src="assests/music.png" />
+            </div>
+
+            <div class="second-list">
+                <h3> <a href="https://finalchristmas-899d7.web.app">Community Forum</a> </h3>
+                <img src="assests/forum.png" />
+            </div>
+            </div>
+
+            <footer class="footer">
+    
+                <p>
+                  Created By Janani, Mae, Pranitha, and Emma
+                </p>
+                
+              </footer>
 </body>
- 
-</body>
-
-
 </html>
