@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: #a7bfa9e6;
+    display: grid;
+}
+
+.header {
+    padding: 20px;
+    text-align: left;
+    background: #ffffff;
+    font-size: 25px;
+    height: 100px;
+    display: flex;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.124);
+}
+
+#signInBtn, #signOutBtn {
+    background-color: #0a270da1;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 50px;
+}
+
+#content {
+    padding: 15px;
+    background: #05260049;
+    background-clip: padding-box;
+    margin: 20px;
+    height: 100vh;
+}
+
+.instructions {
+    font-size: 18px;
+    color:white;
+    font-weight: bold;
+}
+
+#createPost {
+    background-color: #0a270d96;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    border-radius: 15px;
+    position: absolute;
+    top:40%;
+    right: 0;
+    width: 120px;
+    
+}
+
+#posts {
+    padding: 15px;
+    background: white;
+    background-clip: padding-box;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+    height: 65vh;
+    border-radius: 15px;
+}
+
+.back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-left: 20px;
+    text-decoration: underline;
+    background-color: #ffffff;
+}
+
+#userDetails {
+    font-size: 15px;
+    font-weight: lighter;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 90px;
+}
