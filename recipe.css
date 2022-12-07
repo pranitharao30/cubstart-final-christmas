@@ -2,19 +2,26 @@
 body{
 box-sizing: border-box;
 
-position: relative;
-width: 1728px;
-height: 1117px;
+position: absolute;
+width: 1280px;
+height: 832px;
 
 background: rgba(167, 191, 169, 0.74);
 }
 
+/* MacBook Pro 14" - 1 */
+
+/* MacBook Air - 1 */
+
+
+
+
 #leftside{
-position: absolute;
+position: relative;
 width: 509px;
 height: 670px;
-left: 120px;
-top: 223px;
+left: 20px;
+top: 23px;
 
 background: #FFFFFF;
 border-radius: 58px;
@@ -99,8 +106,8 @@ color: #0a0909;
     position: absolute;
     width: 691px;
     height: 637px;
-    left: 846px;
-    top: 231px;
+    left: 706px;
+    top: 51px;
     
     background: #F8F8F8;
     border-radius: 58px;
@@ -112,13 +119,13 @@ color: #0a0909;
     width: 630px;
     height: 58px;
     left: 46px;
-    top: 150px;
+    top: 280px;
     
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
-    line-height: 58px;
+    font-size: 24px;
+    line-height: 38px;
     /* identical to box height */
     
     color: #000000;
@@ -135,7 +142,7 @@ color: #0a0909;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 10px;
+    font-size: 30px;
     line-height: 58px;
     /* identical to box height */
     
